@@ -58,6 +58,7 @@ Processing Fees	SWITCH(TRUE(), [Fee Structure]="High",0.05, [Fee Structure]="Mid
 Total Fees	SUMX('customer', [Total Loan] * [Processing Fees])	Total processing fee revenue
 
 Power BI Dashboards
+
 🔹 1. Loan Analysis Dashboard
 Loan breakdown by Income Band, Gender, and Bank Type.
 
