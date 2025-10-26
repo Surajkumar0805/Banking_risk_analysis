@@ -25,7 +25,7 @@ Database Integration (MySQL → Python → Power BI)
 
 This project connects MySQL Workbench to Python to extract banking data dynamically, clean it, and forward it to Power BI for visualization.
 
-🧠 Data Analysis Workflow
+Data Analysis Workflow
 
 1️⃣ Data Extraction
 Queried customer data from MySQL database (banking_case.customer).
@@ -48,8 +48,9 @@ Gender and nationality-based client behavior analysis.
 
 Visualized patterns using seaborn and matplotlib.
 
-4️⃣ KPI Definitions (Power BI DAX)
+KPI Definitions (Power BI DAX)
 KPI	Formula	Description
+
 Total Clients	DISTINCTCOUNT('customer'[Client ID])	Count of unique clients
 Total Loan	SUM('customer'[Total Loan])	Overall loan exposure
 Total Deposit	SUM('customer'[Total Deposit])	Total client deposits
@@ -72,13 +73,14 @@ Aggregated KPIs: Total Loan, Total Deposit, Processing Fees, Clients.
 
 Provides an executive overview for management decisions.
 
-📈 Key Insights
+Key Insights: 
+
 Insight	Description
-🧾 High-income clients	Show highest loan and credit card balances
-💳 Credit card balance	Strongly correlated with total loans
-🏦 Private banks	Lead in total client base and lending exposure
-💰 Processing fees	Provide stable non-interest revenue
-📊 Loan-to-deposit ratio	Key metric for liquidity and risk
+High-income clients	Show highest loan and credit card balances
+Credit card balance	Strongly correlated with total loans
+Private banks	Lead in total client base and lending exposure
+Processing fees	Provide stable non-interest revenue
+Loan-to-deposit ratio	Key metric for liquidity and risk
 
 MySQL Database → Python EDA → Power BI Dashboard → Report Generation
 
